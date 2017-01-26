@@ -1,0 +1,45 @@
+
+head {
+        font-family: 'Rubik', serif;
+        font-size: 16px;
+        font-weight: bold;
+        background-image:url("../images/background.jpg");
+}
+body {
+        font-family: 'Rubik', serif;
+        font-size: 16px;
+        font-weight: bold;
+        background-image:url("../images/background.jpg");
+        margin:0px;
+}
+
+.item {
+    background-color: white;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+.break{
+    border: solid gray 1px;
+}
+
+div.menuUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: white;
+
+}
+div.menuLi {
+    float: left;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+  background: rgba(255, 255, 255, 0.8);
+}

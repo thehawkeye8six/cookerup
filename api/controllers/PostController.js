@@ -29,6 +29,12 @@ module.exports = {
     });
   },
 
+  new: function(req, res) {
+    Post.find(function(err, post) {
+      if (err) {return res.serverError(err);}
+      return res.view({post: post});
+    });
+  }
 
 
 };
