@@ -1,0 +1,14 @@
+<form action="/post/create" method="post">
+  <h2>Submit a Recipe</h2>
+
+  <input type="text" placeholder="Title" name="post_title"><br />
+  <textarea placeholder="description" name="post_description"></textarea><br />
+    <select name="post_category">
+      <option value="oven">Oven</option>
+      <option value="no_bake">No Bake</option>
+      <option value="bbq">Bbq</option>
+      <option value="slow_cook">Slow Cooker</option>
+    </select>
+    <br />
+  <input type="submit" value="Submit Post">
+</form>
