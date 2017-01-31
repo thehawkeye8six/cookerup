@@ -21,8 +21,9 @@ module.exports = {
   post_category: {
     type: 'string',
       required: true
-  }
+  },
 
-}
+
+  }
 };
 
