@@ -23,6 +23,11 @@ module.exports = {
       required: true
   },
 
+  image: {
+    type: 'string',
+    required: true
+  },
+
 
   }
 };

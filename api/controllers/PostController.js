@@ -16,13 +16,11 @@ module.exports = {
       if (err) return next(err);
 
       //image upload
-      var image_name = req.file('image_name');
-      console.log(image_name);
-      //	Files will be uploaded to .tmp/uploads
-        if (err) return res.serverError(err);
-        //	IF ERROR Return and send 500 error with error
-      console.log(files);
-      res.json({ status: 200, file: files });
+      req.file('image').upload({
+        dirname: '../../assets/images/'
+      }, function(error, uploadedFiles) {
+        // do something after file was uploaded...
+      });
       // end upload
 
       res.redirect('/post/show/' + post.id);
