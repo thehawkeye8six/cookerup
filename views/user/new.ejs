@@ -1,10 +1,30 @@
-<form action="/user/create" method="post">
-  <h2>Create an account</h2>
+<div class="container-fluid">
+  <form action="/user/create" method="post" class="register-form">
+    <h2>Sign Up</h2>
 
-  <input type="text" placeholder="Name" name="full_name"><br />
-  <input type="text" placeholder="Email" name="email_address"><br />
-  <input type="text" placeholder="User Name" name="user_name"><br />
-  <input type="text" placeholder="Password" name="user_passwd"><br />
-    <br />
-  <input type="submit" value="Submit Post">
-</form>
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-lg-4">
+        <label>Name</label>
+        <input name="full_name" style="width: 40em;" class="form-control" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-lg-4">
+        <label>User Name</label>
+        <input name="user_name" style="width: 40em;" class="form-control" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-lg-4">
+        <label>Password</label>
+        <input name="user_passwd" style="width: 40em;" class="form-control" type="text">
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+        <input type="submit" class="btn btn-default " value="Submit Post">
+      </div>
+    </div>
+  </form>
+</div>

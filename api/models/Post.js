@@ -23,10 +23,10 @@ module.exports = {
       required: true
   },
 
-  image: {
+/*  image: {
     type: 'string',
     required: true
-  },
+  },*/
 
 
   }
