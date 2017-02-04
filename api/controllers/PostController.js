@@ -14,18 +14,10 @@ module.exports = {
   create: function (req, res, next) {
     Post.create( req.params.all(), function postCreated(err, post) {
       if (err) return next(err);
-
-      //image upload
-      req.file('image').upload({
-        dirname: '../../assets/images/'
-      }, function(error, uploadedFiles) {
-        // do something after file was uploaded...
-      });
-      // end upload
-
       res.redirect('/post/show/' + post.id);
     });
   },
+
 
   show: function (req, res, next) {
     Post.findOne( req.param('id'), function foundPost(err, post) {
